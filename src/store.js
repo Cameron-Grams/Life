@@ -1,7 +1,6 @@
 
 import { createStore, combineReducers } from 'redux'; 
-import { reducer as formReducer } from 'redux-form'; 
-import worldReducer from './reducers/worldReducers'; 
+import worldReducer from './reducers/worldReducer'; 
 
 const reducers = {
     world: worldReducer,

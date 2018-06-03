@@ -22,6 +22,8 @@
 }
 
 .css-title{
+    color: white;
+    font-size: 1.5em;
     flex: 5 1 auto;
 }
 
@@ -30,10 +32,10 @@
     color: #5b5a68;
 }
 
-.css-activeLink:hover{
-    color: white;
+.css-resetButton:hover{
+    color: red;
 }
 
-.css-currentPage{
-    color: white;
+.css-startButton:hover{
+    color: lightgreen;
 }
