@@ -1,0 +1,39 @@
+.css-mainHeader{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #222;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.css-headerDivision{
+    text-align: center;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.css-headerDivision > h3{
+    margin: 20px;
+}
+
+.css-title{
+    flex: 5 1 auto;
+}
+
+.css-activeLink{
+    font-size: 1.5em;
+    color: #5b5a68;
+}
+
+.css-activeLink:hover{
+    color: white;
+}
+
+.css-currentPage{
+    color: white;
+}
