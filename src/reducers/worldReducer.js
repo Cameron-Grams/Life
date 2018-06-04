@@ -3,7 +3,8 @@ import * as actionType from '../actions/actionTypes';
 
 const initialState = {
     currentDisplay: [],
-    nextDisplay: []
+    nextDisplay: [],
+    isLiving: false
 }
 
 const World = ( state=initialState, action ) => {

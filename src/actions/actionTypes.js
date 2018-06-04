@@ -1,0 +1,1 @@
+export const changeLife = 'CHANGE_LIFE_ACTIVITY'; 

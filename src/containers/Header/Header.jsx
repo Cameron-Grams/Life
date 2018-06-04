@@ -1,9 +1,12 @@
 import React from 'react'; 
+import { connect } from 'react-redux'; 
 import './Header.css'; 
 
 const Header = ( props ) => {
     
-    const controlGame = <h4 className="css-startButton">Start</h4>;
+    const controlGame = props.world.isLiving ? <h4 className="css-stopButton">Stop</h4>  
+        : <h4 className="css-startButton">Start</h4>;
+
 
     const controlGameState = () => {
         console.log( "clicked game control" );
@@ -24,4 +27,8 @@ const Header = ( props ) => {
 
 }
 
-export default Header;
+const mapStateToProps = ( state ) => ({
+    world: state.world
+})
+
+export default connect( mapStateToProps, {} )( Header );
