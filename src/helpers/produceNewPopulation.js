@@ -1,5 +1,5 @@
 const newRow = () => {
-    const newArray = Array( 20 );
+    const newArray = Array( 60 );
     for ( let i = 0; i < newArray.length; i++ ){
         newArray[ i ] = Math.floor( Math.random() * 2 );
     }
@@ -7,8 +7,8 @@ const newRow = () => {
 }
 
 const produceNewPopulation = () => { 
-    const arrayOfRows = Array( 20 );
-    for ( let j = 0; j < 20; j++ ){
+    const arrayOfRows = Array( 60 );
+    for ( let j = 0; j < 60; j++ ){
         arrayOfRows[ j ] = newRow();
     }
     return arrayOfRows; 
