@@ -1,17 +1,19 @@
 import * as actionType from '../actions/actionTypes';
-
+import produceNewPopulation from '../helpers/produceNewPopulation'; 
 
 const initialState = {
-    currentDisplay: [],
+    currentDisplay: [ [ 1, 1 ], [ 1, 1 ]],
     nextDisplay: [],
-    isLiving: false
+    isLiving: false,
+    generation: 0
 }
 
 const World = ( state=initialState, action ) => {
     switch( action.type ){
         case actionType.producePopulation:{
             return{
-                ...state
+                ...state,
+                currentDisplay: produceNewPopulation()
             }
         }
         default:{

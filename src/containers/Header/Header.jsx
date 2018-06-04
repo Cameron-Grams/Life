@@ -19,7 +19,7 @@ const Header = ( props ) => {
     return(
         <div className="css-mainHeader" >
             <div className={ `css-headerDivision css-title` } ><h3>Game of Life</h3></div>
-            <div className={ `css-headerDivision css-title` } ><h4>Generation:</h4></div>
+            <div className={ `css-headerDivision css-title` } ><h4>Generation: { props.world.generation }</h4></div>
             <div className={ `css-headerDivision css-activeLink ` } onClick={ controlGameState } >{ controlGame }</div>
             <div className={ `css-headerDivision css-activeLink` } onClick={ resetGameWorld } ><h4 className="css-resetButton">Reset</h4></div>
         </div>
