@@ -10,3 +10,9 @@ export function changeLife(){
         type: 'CHANGE_LIFE_ACTIVITY'
     }
 }
+
+export function livePopulation(){
+    return{
+        type: 'LIVE_POPULATION'
+    }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux'; 
+import { livePopulation } from '../../actions/worldActions'; 
 import Creature from './Creature'; 
 
 
@@ -26,4 +27,4 @@ const mapStateToProps = ( state ) => ( {
     world: state.world
 })
 
-export default connect( mapStateToProps, {} )( Population );
+export default connect( mapStateToProps, { livePopulation } )( Population );
