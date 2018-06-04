@@ -9,7 +9,7 @@ const Population = ( props ) => {
 
     let outputArray = [];
  
-    for ( let k = 0; k < 60; k++ ){
+    for ( let k = 0; k < 40; k++ ){
         let innerArray = [];
         for ( let m = 0; m < 60; m++ ){
             const creatureValue = props.world.currentDisplay[ k ][ m ];

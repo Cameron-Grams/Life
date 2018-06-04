@@ -7,7 +7,7 @@ const newRow = () => {
 }
 
 const produceNewPopulation = () => { 
-    const arrayOfRows = Array( 60 );
+    const arrayOfRows = Array( 40 );
     for ( let j = 0; j < 60; j++ ){
         arrayOfRows[ j ] = newRow();
     }
