@@ -16,3 +16,18 @@ export function livePopulation(){
         type: 'LIVE_POPULATION'
     }
 }
+
+let timerId;
+
+export function startPopulationLife( dispatch ){
+    return ( dispatch ) => {
+        timerId = setInterval( livePopulation(), 1000 );
+        dispatch( timerId );
+    }
+}
+
+export function stopPopulationLife( dispatch ){
+    return ( dispatch ) => { 
+       dispatch( clearInterval( timerId ) );
+    }
+}

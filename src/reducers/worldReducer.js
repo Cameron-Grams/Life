@@ -28,13 +28,10 @@ const World = ( state=initialState, action ) => {
         case actionType.livePopulation:{
             let newDisplay = evaluatePopulation( state.currentDisplay );
 
-
-
             return{
                 ...state,
                 currentDisplay: newDisplay,
-                generation: state.generation++
-        
+                generation: state.generation + 1
             }
         }
         default:{

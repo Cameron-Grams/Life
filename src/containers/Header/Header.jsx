@@ -1,14 +1,14 @@
 import React from 'react'; 
 import { connect } from 'react-redux'; 
-import { changeLife, producePopulation, livePopulation } from '../../actions/worldActions'; 
+import { changeLife, producePopulation, livePopulation  } from '../../actions/worldActions'; 
 import './Header.css'; 
 
 const Header = ( props ) => {
-    const start = () => console.log( 'start' );
-    const stopCount = () => console.log( 'stop' );
+    const startLiving = ( dispatch ) => props.livePopulation();
+//    const stopCount = ( dispatch ) => props.stopPopulationLife( dispatch );
     
-    const controlGame = props.world.isLiving ? <h4 onClick={ start } className="css-stopButton">Stop</h4>  
-        : <h4 onClick={ stopCount } className="css-startButton">Start</h4>;
+    const controlGame = props.world.isLiving ? <h4 onClick={ startLiving } className="css-stopButton">Stop</h4>  
+        : <h4 onClick={ startLiving } className="css-startButton">Start</h4>;
 
     const controlGameState = () => {
         props.changeLife();
