@@ -32,6 +32,10 @@
     color: #5b5a68;
 }
 
+.css-activeLink:hover{
+    cursor: pointer;
+}
+
 .css-resetButton:hover{
     color: red;
 }

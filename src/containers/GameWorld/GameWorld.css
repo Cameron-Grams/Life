@@ -6,4 +6,6 @@
 .css-gameWorldInnerDiv{
     margin: auto;
     width: 800px;
+    height: 400px;
+    box-shadow: 20px 20px 20px black;
 }

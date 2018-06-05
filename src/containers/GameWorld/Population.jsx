@@ -13,15 +13,12 @@ class Population extends React.Component{
     }
 
     componentWillReceiveProps( nextProps ){
-        console.log( ' in population with component did mount' );
         if( !this.props.isLiving && nextProps.isLiving ){
             this.interval = setInterval( () => {
-                console.log( 'in population calling interval' ); 
                 this.props.livePopulation()
             }, 1000 );
         } 
         if ( this.props.isLiving && !nextProps.isLiving ){
-                console.log( 'in population calling clear interval' ); 
             clearInterval( this.interval ); 
         }
     }
@@ -32,11 +29,11 @@ class Population extends React.Component{
 
     render(){
         let outputArray = [];
-        for ( let k = 0; k < 40; k++ ){
+        for ( let y = 0; y < 40; y++ ){
             let innerArray = [];
-            for ( let m = 0; m < 80; m++ ){
-                const creatureValue = this.props.currentDisplay[ k ][ m ];
-                innerArray[ m ] = <Creature key={ m } status={ creatureValue } xLocation={ m * 10 } yLocation={ k * 10 } />
+            for ( let x = 0; x < 80; x++ ){
+                const creatureValue = this.props.currentDisplay[ y ][ x ];
+                innerArray[ x ] = <Creature key={ x } status={ creatureValue } xLocation={ x * 10 } yLocation={ y * 10 } />
             }
             outputArray.push( innerArray );
         }
