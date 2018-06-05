@@ -1,5 +1,5 @@
 const newRow = () => {
-    const newArray = Array( 60 );
+    const newArray = Array( 80 );
     for ( let i = 0; i < newArray.length; i++ ){
         newArray[ i ] = Math.floor( Math.random() * 2 );
     }

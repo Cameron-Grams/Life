@@ -4,11 +4,11 @@ import { changeLife, producePopulation, livePopulation  } from '../../actions/wo
 import './Header.css'; 
 
 const Header = ( props ) => {
-    const startLiving = ( dispatch ) => props.livePopulation();
+ //   const startLiving = ( dispatch ) => props.livePopulation();
 //    const stopCount = ( dispatch ) => props.stopPopulationLife( dispatch );
     
-    const controlGame = props.world.isLiving ? <h4 onClick={ startLiving } className="css-stopButton">Stop</h4>  
-        : <h4 onClick={ startLiving } className="css-startButton">Start</h4>;
+    const controlGame = props.world.isLiving ? <h4 className="css-stopButton">Stop</h4>  
+        : <h4 className="css-startButton">Start</h4>;
 
     const controlGameState = () => {
         props.changeLife();
